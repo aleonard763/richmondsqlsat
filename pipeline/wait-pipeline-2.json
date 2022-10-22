@@ -1,0 +1,33 @@
+{
+	"name": "wait-pipeline-2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait One Second",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			},
+			{
+				"name": "Wait Two Seconds",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Wait One Second",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 2
+				}
+			}
+		],
+		"annotations": []
+	}
+}
