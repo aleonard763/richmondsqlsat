@@ -1,0 +1,9 @@
+{
+	"name": "dfRichmondSQLSat",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b884d3f9-f034-4128-96e0-58c7ea528330",
+		"tenantId": "1c94839e-beb6-4c8a-8735-b11394014c8d"
+	}
+}
